@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>John's GitHub Portfolio</title>
+		<link href="static/css/smooth/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="static/css/reset.css">
+		<link type="text/css" rel="stylesheet" href="static/css/main.css">
+		<script src="static/js/jquery-1.9.1.js"></script>
+		<script src="static/js/jquery-ui-1.10.3.custom.js"></script>
+		<script type="text/javascript" src="static/js/application.js"></script>
+	</head>
+    <body>
+   
+		<header>
+			<div class="top">
+                <nav class="leftnavbar">
+                    <ul>
+                        <li class="ghportfolioButton"><a href="http://127.0.0.1:5000/GitHubPortfolio">Portfolio</a></li>
+                        <li class="experienceButton"><a href="http://127.0.0.1:5000/Experience">Experience</a></li>
+                        <li class="skillsButton"><a href="http://127.0.0.1:5000/Skills">Skills</a></li>
+                    </ul>
+                </nav>
+                <nav class="rightnavbar">
+                    <ul>
+                        <li class="mailButton"><a href="mailto:johnmarksjr@gmail.com">John Marks</a>
+                    </ul>
+                </nav>
+			</div>
+		</header>
+         
+        <section id="portfolioContainer" class="content">
+            {% block portfolio_content %}
+            {% endblock %}
+        </section>
+
+        <section id="experienceContainer" class="content">
+            {% block experience_content %}
+            {% endblock %}
+		</section>
+
+        <section id="skillsContainer" class="content">
+            {% block skills_content %}
+            {% endblock %}
+		</section>
+     
+    </body>
+</html>

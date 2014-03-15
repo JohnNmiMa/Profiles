@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block portfolio_content %}
+    <div class="container">
+        <h1 id="portfolioTitle">
+            <a href="https://github.com/jettagozoom" target="_blank">GitHub</a>
+            Portfolio
+        </h1>
+        <img src="static/img/github.png"><br>
+        <p id="dateUpdated">12 March 2014</p><br>
+    </div>
+    <div class="title">
+        <h2>Thinkful - Programming in Python</h2>
+    </div>
+
+    <ul>
+        <p>This section of the PIP course was on learning OO in Python. The project here models the building of automobiles. There is a class called Automobile that knows how to build a generic car. In the class is a Template Method named 'build()' that implements an algorithm that correctly builds automobiles - each stage done in the correct order. Each stage of building and assembling a car is represented as a method call in the template. The Automobile class can be subclassed so that other more specialized cars can be built. The SportsCar class is such a class.</p><br>
+        <p>The building of a car can be done one step after another in a serial fashion, or in parallel. The threading.Thread object is used to create and control the threads. To help pace each stage of the car the threading.Event class was used. When one stage is dependent upon a previous stage to be complete, the dependent stage will wait() upon the previous stage until an event is set/signaled.</p><br>
+        <p>Each stage has a set amount of time to complete, and is specified in hours. To help build the automobile sooner than real-time, a rate factor can be specified so that the car will be built in seconds, rather than days.</p><br>
+        <p>The project was done in TDD fashion, producing a failing test, and then makeing it pass, and then refactoring the code as needed</p>
+        <li><a href="https://github.com/jettagozoom/OOModel" target="_blank"><em>OO Modeling - Building Cars</em></a></li>
+
+        <p>This assignment introduced us to basic Python syntax: strings, printing/formatting, variables, boolean/comparison/arithmetic operators, control flow, functions, classes, regular expressions, lists, tuples, dictionaries, user input, file io, namespaces, and modules.</p><br>
+        <p>The final project in this section was to parse various documents from Project Gutenberg. We were to gather key metadata from each document (Title, Author, Illustrator, etc.) and then search and report user input keywords throughout the text.</p>
+        <li><a href="https://github.com/jettagozoom/LPTHW/blob/master/DocumentTagger/part3/doc_tagger_final.py" target="_blank"><em>Project Gutenberg</em></a></li>
+    </ul>
+
+    <div class="title">
+        <h2>Thinkful - Front End Web Development</h2>
+    </div>
+    <ul>
+        <p>This is the final FEWD project. We are to create a portfolio of our work. I have chosen to show my projects and create an overall "resume" type page, with my Thinkful and past work, my experience, and my various software engineering skills. The first task is to create a wireframe of the portfolio.</p>
+        <li><a href="http://jettagozoom.github.io/Portfolio/Wireframe/Portfolio.html" target="_blank"><em>Portfolio Wireframe</em></a></li>
+        <li><a href="http://jettagozoom.github.io/Portfolio/" target="_blank"><em>Portfolio (alpha)</em></a></li>
+
+        <p>This project introduced us to AJAX. I chose a web API from Market On Demand. It allows you to create a stock portfolio through 1) stock symbol lookup, get stock information such as price, high, low, change, etc, and 3) get stock charting data. It needs an ability to keep track of stocks on a per user basis and to be able to persit each user's stock portfolio. On to back-end development and databaases :-).</p>
+        <li><a href="http://jettagozoom.github.io/JsonApiHack/" target="_blank"><em>Stock Portfolio</em></a></li>
+        
+        <p>This project enhanced our jQuery skills. I used the fadeOut(), fadeIn() and show() effects and updated and changed the DOM with the .text(), .att(), addClass(), .removeClass(), .each(), .prop(), .appendTo(), and empty() jQuery methods.</p>
+        <li><a href="http://jettagozoom.github.io/Quizalator/" target="_blank"><em>Quizalator</em></a></li>
+        
+        <p>This is a project that I started for the Shopping List assignment. I wanted to create multiple lists, where each list would allow the user to put in items unique to that list. This was quite a bit more involved. It is working, but I still want to be able to delete lists as well as make the UI more interesting.</p>
+        <li><a href="http://jettagozoom.github.io/ShoppingLists/" target="_blank"><em>Shopping Lists</em></a></li>
+        
+        <p>The Shopping List taught us more jQuery, where we had to dynamically add items to a shopping lists. This required binding various events to elements and handling form submissions.</p>
+        <li><a href="http://jettagozoom.github.io/ShoppingList/" target="_blank"><em>Shopping List</em></a></li>
+        
+        <p>This assignment delved deeper into Javascript. Here we created constructors for classes containing public and private methods and variables.</p>
+        <li><a href="http://jettagozoom.github.io/HotOrCold/" target="_blank"><em>Hot or Cold Game</em></a></li>
+        
+        <p>The assignment was to recreate the 37signals.com home page. Here we were introduced to jQuery and Javascript. Our first dynamic web page!</p>
+        <li><a href="http://jettagozoom.github.io/37signals/" target="_blank"><em>37signals</em></a></li>
+
+        <p>This was the first HTML project where we were to recreate the Google.com home page. This was to exercise our learning of HTML and CSS.</p>
+        <li><a href="http://jettagozoom.github.io/GoogleClone/" target="_blank"><em>Google Clone</em></a></li>
+
+    </ul>
+{% endblock %}
