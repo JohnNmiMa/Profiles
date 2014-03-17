@@ -38,7 +38,7 @@ header {
             padding-left: 0;
 		}
 
-		header .top ul li.mailButton {
+		header .top ul li.button {
             padding-left: 15px;
 			background: #60c933;
 			color:#fff;
@@ -49,7 +49,7 @@ header {
 			color:#444;
 		}
 
-		header .top ul li.mailButton a {
+		header .top ul li.button a {
 			color:#fff;
 		}
 
@@ -103,6 +103,6 @@ header {
 				color:#41b7d8;
 			}
 
-	#experience.content #experienceimage {
+	#experienceContainer #experienceimage {
 		width:100%;
 	}

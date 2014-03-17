@@ -5,9 +5,8 @@ app = Flask(__name__)
  
 @app.route('/')
 def github():
-    #return render_template('index.html')
     print "At first route request"
-    return render_template('github_portfolio.html')
+    return render_template('index.html')
 
 @app.route('/GitHubPortfolio')
 def github_portfolio():

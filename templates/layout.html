@@ -14,16 +14,12 @@
 		<header>
 			<div class="top">
                 <nav class="leftnavbar">
-                    <ul>
-                        <li class="ghportfolioButton"><a href="http://127.0.0.1:5000/GitHubPortfolio">Portfolio</a></li>
-                        <li class="experienceButton"><a href="http://127.0.0.1:5000/Experience">Experience</a></li>
-                        <li class="skillsButton"><a href="http://127.0.0.1:5000/Skills">Skills</a></li>
-                    </ul>
+                    {% block left_navbar %}
+                    {% endblock %}
                 </nav>
                 <nav class="rightnavbar">
-                    <ul>
-                        <li class="mailButton"><a href="mailto:johnmarksjr@gmail.com">John Marks</a>
-                    </ul>
+                    {% block right_navbar %}
+                    {% endblock %}
                 </nav>
 			</div>
 		</header>
@@ -33,7 +29,7 @@
             {% endblock %}
         </section>
 
-        <section id="experienceContainer" class="content">
+        <section id="experienceContainer">
             {% block experience_content %}
             {% endblock %}
 		</section>
